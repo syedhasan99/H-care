@@ -1,0 +1,157 @@
+.register-patient {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 11%); */
+  /* border: 1px solid #ddd; */
+}
+
+.admit-new-patient button,
+.register-patient button {
+  width: fit-content;
+}
+
+.admit-new-patient .buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.card .card-header {
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card .card-body {
+  padding: 20px;
+  /* border: 2px solid #ddd; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.css-1agg2cp-MuiResponsiveChart-container {
+  width: 100% !important;
+}
+
+.middle-appoint {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.badges {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.patient-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+.doctor-card {
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+}
+
+.search-field {
+  margin-bottom: 20px;
+}
+
+.css-1kuwa16-MuiCardMedia-root {
+  object-fit: cover;
+  object-position: top;
+}
+
+.card-header.fheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+  }
+}
+
+.shift-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+
+.availability-tracker {
+  padding: 20px;
+}
+
+.tracker-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.staff-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: space-between;
+}
+
+.staff-card {
+  width: 48%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.avai-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.staff-avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.status-badge {
+  font-size: 12px;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 20px;
+}

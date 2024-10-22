@@ -1,0 +1,36 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #f8f9fa; */
+    height: 100%;
+    overflow-y: auto;
+    min-width: 200px;
+}
+
+.css-cokf1l-MuiListItemIcon-root {
+    font-size: 15px;
+    min-width: 40px !important;
+}
+a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.sidebar img {
+    width: 150px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.sidebar button {
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-link {
+    margin: 0 auto;
+}
+button svg {
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
