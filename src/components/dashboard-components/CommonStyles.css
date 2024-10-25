@@ -45,10 +45,24 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
+}
+
+.card-body .over {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: flex-start;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .css-1agg2cp-MuiResponsiveChart-container {
   width: 100% !important;
+}
+
+.css-1j74uew-MuiPaper-root-MuiCard-root{
+  min-width: fit-content;
 }
 
 .middle-appoint {
@@ -154,4 +168,143 @@
   padding: 5px 10px;
   color: #fff;
   border-radius: 20px;
+}
+
+
+.department-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+
+.small-card {
+  background-color: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 11%); */
+  /* border: 1px solid #ddd; */
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.top .small-card {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 15px;
+  position: relative;
+
+    svg.dots {
+        color: var(--text-light2);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        padding: 5px;
+        border-radius: 50%;
+
+        &:hover {
+            background-color: #d8d8d8;
+        }
+    }
+}
+
+.top .small-card:nth-of-type(1) {
+  .icon {
+    background: var(--primary-light);
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+
+    svg {
+      color: var(--color-primary);
+      font-size: 22px;
+    }
+  }
+}
+
+.top .small-card:nth-of-type(2) {
+  .icon {
+    background: var(--second-section-light);
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+    svg {
+      color: var(--second-section);
+      font-size: 22px;
+    }
+  }
+}
+
+.top .small-card:nth-of-type(3) {
+  .icon {
+    background: var(--third-section-light);
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+    svg {
+      color: var(--third-section);
+      font-size: 22px;
+    }
+  }
+}
+
+.top .small-card:nth-of-type(4) {
+  .icon {
+    background: var(--fourth-section-light);
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+    svg {
+      color: var(--fourth-section);
+      font-size: 22px;
+    }
+  }
+}
+
+.small-card .right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-light2);
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }

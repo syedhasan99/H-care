@@ -1,0 +1,120 @@
+const departments = [
+  {
+    departmentId: "D001",
+    name: "Cardiology",
+    head: "Dr. Amanda Thompson",
+    totalStaff: 25,
+    totalDoctors: 10,
+    machineCount: 5,
+    budget: 500000, // in USD
+    establishedDate: "2005-06-14",
+    performanceScore: 92, // out of 100
+    description:
+      "Specializes in diagnosing and treating heart-related diseases and conditions.",
+  },
+  {
+    departmentId: "D002",
+    name: "Neurology",
+    head: "Dr. Michael Brown",
+    totalStaff: 20,
+    totalDoctors: 8,
+    machineCount: 6,
+    budget: 450000,
+    establishedDate: "2008-04-20",
+    performanceScore: 89,
+    description:
+      "Focuses on treating disorders of the brain, spine, and nervous system.",
+  },
+  {
+    departmentId: "D003",
+    name: "Pediatrics",
+    head: "Dr. Emily Scott",
+    totalStaff: 18,
+    totalDoctors: 6,
+    machineCount: 4,
+    budget: 400000,
+    establishedDate: "2010-09-02",
+    performanceScore: 91,
+    description:
+      "Provides care for infants, children, and adolescents in all aspects of health.",
+  },
+  {
+    departmentId: "D004",
+    name: "Orthopedics",
+    head: "Dr. John Carter",
+    totalStaff: 22,
+    totalDoctors: 9,
+    machineCount: 3,
+    budget: 420000,
+    establishedDate: "2007-11-30",
+    performanceScore: 90,
+    description:
+      "Specializes in musculoskeletal system issues including bones, joints, and muscles.",
+  },
+  {
+    departmentId: "D005",
+    name: "Dermatology",
+    head: "Dr. Sarah Green",
+    totalStaff: 12,
+    totalDoctors: 5,
+    machineCount: 2,
+    budget: 250000,
+    establishedDate: "2011-05-12",
+    performanceScore: 88,
+    description: "Focuses on the diagnosis and treatment of skin disorders.",
+  },
+  {
+    departmentId: "D006",
+    name: "ENT",
+    head: "Dr. Robert King",
+    totalStaff: 15,
+    totalDoctors: 7,
+    machineCount: 4,
+    budget: 320000,
+    establishedDate: "2012-07-19",
+    performanceScore: 87,
+    description:
+      "Treats conditions of the ear, nose, throat, and related structures.",
+  },
+  {
+    departmentId: "D007",
+    name: "Gynecology",
+    head: "Dr. Rachel Adams",
+    totalStaff: 20,
+    totalDoctors: 8,
+    machineCount: 4,
+    budget: 370000,
+    establishedDate: "2009-03-22",
+    performanceScore: 93,
+    description:
+      "Provides care related to the female reproductive system and pregnancy.",
+  },
+  {
+    departmentId: "D008",
+    name: "General Medicine",
+    head: "Dr. Mark Wilson",
+    totalStaff: 30,
+    totalDoctors: 12,
+    machineCount: 6,
+    budget: 550000,
+    establishedDate: "2006-01-18",
+    performanceScore: 95,
+    description:
+      "Covers a broad range of medical conditions and provides initial treatments.",
+  },
+//   {
+//     departmentId: "D010",
+//     name: "Emergency Medicine",
+//     head: "Dr. Kevin Miller",
+//     totalStaff: 35,
+//     totalDoctors: 15,
+//     machineCount: 6,
+//     budget: 600000,
+//     establishedDate: "2004-12-01",
+//     performanceScore: 96,
+//     description:
+//       "Handles urgent and emergency medical situations requiring immediate attention.",
+//   },
+];
+
+export default departments;

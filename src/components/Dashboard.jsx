@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './sidebar'
+import Sidebar from './Sidebar'
 import Header from './Header'
 import './Dashboard.css'
 import { Route, Routes } from 'react-router-dom'
@@ -12,13 +12,13 @@ import Discharge from './dashboard-components/Discharge'
 import DoctorsList from './dashboard-components/DoctorsList'
 import ShiftSchedule from './dashboard-components/ShiftSchedule'
 import AvailabilityTracker from './dashboard-components/AvailabilityTracker'
-import Cardiology from './dashboard-components/Cardiology'
-import Neurology from './dashboard-components/Neurology'
 import Surgery from './dashboard-components/Surgery'
 import Pharmacy from './dashboard-components/Pharmacy'
 import EmergencyAlerts from './dashboard-components/EmergencyAlerts'
 import ReportsAnalytics from './dashboard-components/ReportsAnalytics'
 import Overview from './dashboard-components/Overview'
+import CommonDepartment from './dashboard-components/CommonDepartment'
+import departments from '../HospitalData/departments'
 
 const Dashboard = () => {
   return (
@@ -42,8 +42,11 @@ const Dashboard = () => {
                   <Route path='/shiftSchedules' element={<ShiftSchedule />}></Route> 
                   <Route path='/availabilityTracker' element={<AvailabilityTracker />}></Route> 
 
-                  <Route path='/cardiology' element={<Cardiology />}></Route> 
-                  <Route path='/neurology' element={<Neurology />}></Route> 
+                  {departments.map((department) => (
+                    <Route key={department.departmentId} path={`/${department.name.split(' ').join('').toLowerCase()}`} element={<CommonDepartment departmentId={department.departmentId} />}></Route>
+                  ))}
+                  {/* <Route path='/cardiology' element={<CommonDepartment />}></Route>  */}
+                  {/* <Route path='/neurology' element={<Neurology />}></Route> */}
                   <Route path='/surgery' element={<Surgery />}></Route> 
                   <Route path='/pharmacy' element={<Pharmacy />}></Route> 
 

@@ -12,7 +12,7 @@ const Overview = () => {
   return (
     <div className="overview">
       <div className="top">
-        <div className="card">
+        <div className="small-card">
           <HiDotsHorizontal className="dots" />
           <div className="icon">
             <FaBed />
@@ -22,7 +22,7 @@ const Overview = () => {
             <h3>Total Patients</h3>
           </div>
         </div>
-        <div className="card">
+        <div className="small-card">
           <HiDotsHorizontal className="dots" />
 
           <div className="icon">
@@ -33,17 +33,17 @@ const Overview = () => {
             <h3>Available Staff</h3>
           </div>
         </div>
-        <div className="card">
+        <div className="small-card">
           <HiDotsHorizontal className="dots" />
           <div className="icon">
             <FaWallet />
           </div>
           <div className="right">
             <h2>$2,536</h2>
-            <h3>Ang Treats. Costs</h3>
+            <h3>Avg Treats. Costs</h3>
           </div>
         </div>
-        <div className="card">
+        <div className="small-card">
           <HiDotsHorizontal className="dots" />
           <div className="icon">
             <FaAmbulance />
