@@ -15,8 +15,8 @@ export default function GenderPie() {
             cornerRadius: 10,
           },
         ]}
-        width={300}
-        height={250}
+        width={350}
+        height={300}
         margin={{ top: 20, bottom: 50, left: 20, right: 20 }}
         slotProps={{
           legend: {
