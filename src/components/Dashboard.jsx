@@ -51,7 +51,7 @@ const Dashboard = () => {
                   <Route path='/pharmacy' element={<Pharmacy />}></Route> 
 
                   <Route path='/emergencyAlerts' element={<EmergencyAlerts />}></Route> 
-                  <Route path='/reportsAnalytics' element={<ReportsAnalytics />}></Route> 
+                  <Route path='/reportsAnalytics/*' element={<ReportsAnalytics />}></Route> 
 
                 </Routes>
             </div>
