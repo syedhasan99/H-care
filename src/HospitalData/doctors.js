@@ -12,6 +12,10 @@ const doctors = [
     consultationFee: "$100",
     image:
       "https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg",
+    procedureCompleted: 25,
+    attendance: 100,
+    averageRating: 5.0,
+    emergencyCases: 12,
   },
   {
     doctorId: "D011",
@@ -25,6 +29,10 @@ const doctors = [
     consultationFee: "$90",
     image:
       "https://img.freepik.com/premium-photo/woman-white-lab-coat-is-posing-photo_1304358-2909.jpg?w=1060",
+    procedureCompleted: 5,
+    attendance: 95,
+    averageRating: 4.5,
+    emergencyCases: 2,
   },
 
   // Pediatrics
@@ -40,6 +48,10 @@ const doctors = [
     consultationFee: "$80",
     image:
       "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?w=826&t=st=1729445443~exp=1729446043~hmac=490b809127e7d875fa6e5f5568df1542f344c9a5e5b82cc1ed1f677632d5c2f6",
+    procedureCompleted: 3,
+    attendance: 90,
+    averageRating: 4.6,
+    emergencyCases: 1,
   },
   {
     doctorId: "D012",
@@ -53,6 +65,10 @@ const doctors = [
     consultationFee: "$85",
     image:
       "https://img.freepik.com/premium-photo/man-with-stethoscope-around-his-neck_1185498-132429.jpg?w=1060",
+    procedureCompleted: 4,
+    attendance: 98,
+    averageRating: 4.7,
+    emergencyCases: 2,
   },
 
   // Neurology
@@ -68,6 +84,10 @@ const doctors = [
     consultationFee: "$120",
     image:
       "https://img.freepik.com/free-photo/cheerful-male-doctor-white-gown-portrait_53876-108640.jpg?t=st=1729445836~exp=1729449436~hmac=78b78ef674d0ec304c20e66aa7b5b5f05365c6edb5ee9296f20ca81e7574f653&w=826",
+    procedureCompleted: 15,
+    attendance: 99,
+    averageRating: 4.9,
+    emergencyCases: 8,
   },
   {
     doctorId: "D013",
@@ -81,6 +101,10 @@ const doctors = [
     consultationFee: "$110",
     image:
       "https://img.freepik.com/free-photo/doctor-woman-smiling-gesturing-thumbs-up_23-2148075688.jpg?t=st=1729771362~exp=1729774962~hmac=da6bb5d5dd68cd0ece7dd762b65e8e77b670d7c65d0cd4cb6904907c0f413bd7&w=996",
+    procedureCompleted: 10,
+    attendance: 94,
+    averageRating: 4.6,
+    emergencyCases: 4,
   },
 
   // Dermatology
@@ -96,6 +120,10 @@ const doctors = [
     consultationFee: "$90",
     image:
       "https://img.freepik.com/free-photo/portrait-asian-doctor-woman-cross-arms-standing-medical-uniform-stethoscope-smiling-camera-white-background_1258-83220.jpg?t=st=1729446197~exp=1729449797~hmac=8b06cc811b71b507b5316b30bf851e2dd1b3994b44c6d5d8c88f3a0a069cc6c3&w=826",
+    procedureCompleted: 4,
+    attendance: 92,
+    averageRating: 4.4,
+    emergencyCases: 2,
   },
   {
     doctorId: "D014",
@@ -109,6 +137,10 @@ const doctors = [
     consultationFee: "$95",
     image:
       "https://img.freepik.com/premium-photo/doctor-with-his-arms-crossed-smiling_1185498-132279.jpg?w=1060",
+    procedureCompleted: 6,
+    attendance: 97,
+    averageRating: 4.7,
+    emergencyCases: 3,
   },
 
   // Orthopedics
@@ -124,6 +156,10 @@ const doctors = [
     consultationFee: "$200",
     image:
       "https://img.freepik.com/premium-photo/rheumatologist-isolated-flat-color-background_980928-38401.jpg?w=1060",
+    procedureCompleted: 8,
+    attendance: 100, // In percentage
+    averageRating: 4.8,
+    emergencyCases: 5,
   },
   {
     doctorId: "D015",
@@ -137,6 +173,10 @@ const doctors = [
     consultationFee: "$180",
     image:
       "https://img.freepik.com/free-photo/isolated-shotof-happy-successful-mature-senior-physician-wearing-medical-unifrom-stethoscope-having-cheerful-facial-expression-smiling-broadly-keeping-arms-crossed-chest_343059-2254.jpg?t=st=1729835903~exp=1729839503~hmac=8560693d67ade189d0c5f26864e70be6a728db9564bcaa627554bb7f76660a4b&w=996",
+    procedureCompleted: 20,
+    attendance: 95,
+    averageRating: 4.8,
+    emergencyCases: 9,
   },
 
   // Gynecology
@@ -152,6 +192,10 @@ const doctors = [
     consultationFee: "$110",
     image:
       "https://img.freepik.com/premium-photo/young-doctor-venezuelan-woman-isolated-blue-background-happy-smiling-cheerful_1187-184669.jpg?w=826",
+    procedureCompleted: 8,
+    attendance: 93,
+    averageRating: 4.6,
+    emergencyCases: 3,
   },
   {
     doctorId: "D016",
@@ -165,6 +209,10 @@ const doctors = [
     consultationFee: "$115",
     image:
       "https://img.freepik.com/free-photo/female-doctor-hospital-with-stethoscope_23-2148827775.jpg?t=st=1729836657~exp=1729840257~hmac=4c8727a8415bbeb21105676e3a80ad9d4818b0ed6c22e372201584ffd5e008b9&w=1060",
+    procedureCompleted: 9,
+    attendance: 95,
+    averageRating: 4.7,
+    emergencyCases: 6,
   },
 
   // ENT
@@ -180,6 +228,10 @@ const doctors = [
     consultationFee: "$90",
     image:
       "https://img.freepik.com/free-photo/hospital-healthcare-workers-covid-19-treatment-concept-young-doctor-scrubs-making-daily-errands-clinic-listening-patient-symptoms-look-camera-professional-physician-curing-diseases_1258-57233.jpg?t=st=1729837025~exp=1729840625~hmac=09624d2155c9cef09cdb1a08eba05fd1d43e508430d7c890092745034d734d7c&w=996",
+    procedureCompleted: 20,
+    attendance: 91,
+    averageRating: 4.8,
+    emergencyCases: 10,
   },
   {
     doctorId: "D018",
@@ -193,6 +245,10 @@ const doctors = [
     consultationFee: "$85",
     image:
       "https://img.freepik.com/premium-photo/confident-young-female-doctor-white-coat-with-stethoscope-standing-with-arms-crossed-smiling-against-gray-background_1285909-758.jpg?w=1060",
+    procedureCompleted: 25,
+    attendance: 99,
+    averageRating: 5.0,
+    emergencyCases: 15,
   },
 ];
 
