@@ -1,80 +1,79 @@
 import * as React from "react";
-import { LineChart } from "@mui/x-charts/LineChart";
-import Button from "@mui/material/Button";
+import Chart from "chart.js/auto";
+import { CategoryScale, PieController } from "chart.js";
+import { Line, Pie } from "react-chartjs-2";
 
+export const Data = [
+  {
+    id: 1,
+    year: 2016,
+    userGain: 80000,
+    userLost: 823,
+  },
+  {
+    id: 2,
+    year: 2017,
+    userGain: 45677,
+    userLost: 345,
+  },
+  {
+    id: 3,
+    year: 2018,
+    userGain: 78888,
+    userLost: 555,
+  },
+  {
+    id: 4,
+    year: 2019,
+    userGain: 90000,
+    userLost: 4555,
+  },
+  {
+    id: 5,
+    year: 2020,
+    userGain: 4300,
+    userLost: 234,
+  },
+];
+
+Chart.register(CategoryScale);
 export default function PatientsTrend() {
-  // Sample data for 1D trend
-  const [xAxisData, setXAxisData] = React.useState([1, 2, 3, 5, 8, 10]);
-  const [data, setData] = React.useState([2, 5.5, 2, 8.5, 1.5, 5]);
-
-  // Function to change the time frame of the data
-  const changeTimeFrame = (timeFrame) => {
-    // Implement logic to fetch and update the data based on the selected time frame
-    // For example, fetch data from a server based on the provided time frame
-    // Update the data variable and re-render the LineChart component
-  };
+  const [chartData, setChartData] = React.useState({
+    labels: Data.map((data) => data.year),
+    datasets: [
+      {
+        label: "Users Gained ",
+        data: Data.map((data) => data.userGain),
+        backgroundColor: [
+          "rgba(75,192,192,1)",
+          "&quot;#ecf0f1",
+          "#50AF95",
+          "#f3ba2f",
+          "#2a71d0",
+        ],
+        borderColor: "black", 
+        borderWidth: 1,
+      },
+    ],
+  });
   return (
     <div>
-      <Button
-        variant="text"
-        onClick={() => {
-          setXAxisData([1, 2, 3, 5, 8, 10]);
-          setData([2, 5.5, 2, 8.5, 1.5, 5]);
-        }}
-      >
-        1D
-      </Button>
-      <Button
-        variant="text"
-        onClick={() => {
-          setXAxisData([1, 2, 3, 5, 8, 10, 11, 15, 20]);
-          setData([2, 5.5, 2, 8.5, 1.5, 5, 3, 7, 10]);
-        }}
-      >
-        5D
-      </Button>
-      <Button
-        variant="text"
-        onClick={() => {
-          setXAxisData([1, 2, 3, 5, 8, 10, 11, 15, 20, 25, 30]);
-          setData([2, 5.5, 2, 8.5, 1.5, 5, 3, 7, 10, 4, 6]);
-        }}
-      >
-        1M
-      </Button>
-      <Button
-        variant="text"
-        onClick={() => {
-          setXAxisData([1, 2, 3, 5, 8, 10, 11, 15, 20, 25, 30, 35, 40]);
-          setData([2, 5.5, 2, 8.5, 1.5, 5, 3, 7, 10, 4, 6, 8, 10]);
-        }}
-      >
-        6M
-      </Button>
-      <Button
-        variant="text"
-        onClick={() => {
-          setXAxisData([1, 2, 3, 5, 8, 10, 11, 15, 20, 25, 30, 35, 40, 45, 50]);
-          setData([2, 5.5, 2, 8.5, 1.5, 5, 3, 7, 10, 4, 6, 8, 10, 12, 14]);
-        }}
-      >
-        1Y
-      </Button>
-      <LineChart
-        xAxis={[{ data: xAxisData }]}
-        series={[
-          {
-            data: data,
-            showMark: false,
-            color: "#752bdf",
-            area: true,
-            label: 'Logged Patients',
+      <h2>Patients Trend</h2>
+      {/* Add your chart code here */}
+      <Line
+        data={chartData}
+        options={{
+          plugins: {
+            title: {
+              display: true,
+              text: "Users Gained between 2016-2020",
+            },
+            legend: {
+              display: false
+            }
           },
-        ]}
-        width={500}
-        height={300}
+        }}
       />
-      <input type="number" />
     </div>
   );
 }
